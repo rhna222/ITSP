@@ -1,0 +1,53 @@
+<head>
+  <style>
+  body {
+    background-image: url('https://images.unsplash.com/photo-1504711434969-e33886168f5c?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bmV3c3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80');
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: cover;
+  }
+  </style>
+  </head>
+<body>
+
+<div class= "logo-bar" style="background-color: rgb(63, 240, 107);" style="text-align:center;" >
+  <a class="navbar-brand" href="#"  >
+     <img src="https://lh3.googleusercontent.com/deZ-OXDGkYJ4yqKy0Er50Uqe4WuzWoHu0lauvyXRFsGAMeWHOeWWo8Idy_mmnlruBNTAdtvR12tMmoeT5XW-sDuPlW2Oyqheb_ENDeSSfRuWmT5S7pLcQa0VpoE-9LADwgE3K-BkZgXxGCNAhD9yl2Jg_ofYDLm2eqTAEfhxL1s0AaN8p37d5QKfC6OojJ61D3cEziHy1qZN3qhK6nSFbRPqTEkI2zqNVLAdvMVwnXhP3ZthpLs8TwJqA61fLfx9K0Bzq8Tiu_4h1VXIMb1WeFc4yzK8lZDDfXOpswIDdfjkOq3p3d6teOst0xGzvBpTy_CUpm9fQXDxKtHWKtaYey2wuNmjY6Bt59E2DG02DAvTmzx5g1zLQXHTgggJOGbvp68G3SU86P65a72SY4o-Fbo_xyHFCH9Rws_yjdlHRsVnlIdBu0wTr8C1CWjS2zvRrMKgaW5cMr2kfaWw9u99pBiwgKiXhbQHD06kdION7J74ryfwh_d6B2fqqg1M_g_7nwxioRVZI5KiHbW2h3o13ZNMa_2BJnTRBaxruYI4x42z2btbnLYZ6KnL8FOjg1G7VzmGcBLDBv5x3kuyHjTdDCiztklnNkWcJxWp0aTdiFVPlbwNPExnY2Xu5kM0x5FypNVEZrKhrPw5_dgLfI-KXtUqN4QHfdVgCzKwt40Wxqp1L0DbkalbF4lb9O46xUTLVDbUWCIFeN-d-AuyxHI0k5LLkw=w499-h134-no?authuser=0" alt="Logo" class="center"  > </a>
+</div>
+
+
+<div class="justify-content-center mx-auto" >
+
+
+ <div class="col-sm-8 mx-auto" style="width: 28rem;height: 36rem;  border-style: solid; border-color: rgb(15, 13, 143);">
+    <form  class="text-center border border-light p-5">
+     <p class="h4 mb-4">Sign in</p>
+
+        <!-- Email -->
+      
+        <div class="form-group">
+          <label for="exampleInputEmail1">Email address</label>
+          <input type="email" name= "email" [(ngModel)]= "email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" style="border-color: rgb(63, 240, 107);">
+          <small id="emailHelp" class="form-text " style="color: black;">Enter your registered email here</small>
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Password</label>
+          <input type="password" name= "password" [(ngModel)]= "pwd" class="form-control" id="exampleInputPassword1" placeholder="Password"  style="border-color: rgb(63, 240, 107);">
+          <small id="pwdHelp" class="form-text " style="color: black;">Enter your password here</small>
+        </div>
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        </div>
+        <button type="submit" (click)="submit()" class="btn btn-primary" style="background-color: rgb(63, 240, 107);color: black;">Login</button>
+         <!-- Register -->
+         
+         <p>Not a member?
+          <a href="register" style="color: blue;">Register</a>
+        </p>
+
+
+    </form>
+ </div>
+</div>
+</body>

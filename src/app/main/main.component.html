@@ -1,0 +1,95 @@
+ <!-- Nav baar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="#">ApolloNews</a>
+  
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Categories</a>
+        </li>
+      
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+
+  
+  </nav>
+  
+  <nav id="navbar-example3" class="navbar navbar-light" style="background-color: rgb(63, 240, 107);" >
+    <div style="text-align: center" class="text-center">
+        <a class="navbar-brand" href="#"  > <img src="https://lh3.googleusercontent.com/deZ-OXDGkYJ4yqKy0Er50Uqe4WuzWoHu0lauvyXRFsGAMeWHOeWWo8Idy_mmnlruBNTAdtvR12tMmoeT5XW-sDuPlW2Oyqheb_ENDeSSfRuWmT5S7pLcQa0VpoE-9LADwgE3K-BkZgXxGCNAhD9yl2Jg_ofYDLm2eqTAEfhxL1s0AaN8p37d5QKfC6OojJ61D3cEziHy1qZN3qhK6nSFbRPqTEkI2zqNVLAdvMVwnXhP3ZthpLs8TwJqA61fLfx9K0Bzq8Tiu_4h1VXIMb1WeFc4yzK8lZDDfXOpswIDdfjkOq3p3d6teOst0xGzvBpTy_CUpm9fQXDxKtHWKtaYey2wuNmjY6Bt59E2DG02DAvTmzx5g1zLQXHTgggJOGbvp68G3SU86P65a72SY4o-Fbo_xyHFCH9Rws_yjdlHRsVnlIdBu0wTr8C1CWjS2zvRrMKgaW5cMr2kfaWw9u99pBiwgKiXhbQHD06kdION7J74ryfwh_d6B2fqqg1M_g_7nwxioRVZI5KiHbW2h3o13ZNMa_2BJnTRBaxruYI4x42z2btbnLYZ6KnL8FOjg1G7VzmGcBLDBv5x3kuyHjTdDCiztklnNkWcJxWp0aTdiFVPlbwNPExnY2Xu5kM0x5FypNVEZrKhrPw5_dgLfI-KXtUqN4QHfdVgCzKwt40Wxqp1L0DbkalbF4lb9O46xUTLVDbUWCIFeN-d-AuyxHI0k5LLkw=w499-h134-no?authuser=0" alt="Logo"  > </a>
+    </div>
+    <nav class="nav nav-pills flex-column">
+      <a class="nav-link" href="#item-1" style="font-size:30px;color: black;" > News</a>
+      <nav class="nav nav-pills flex-column">
+        <a class="nav-link" href="#item-1-1" style="font-size:30px;color: black;">News 1</a>
+      </nav>
+      <a class="nav-link" href="#item-2" style="font-size:30px;color: black;">About us</a>
+    </nav>
+  </nav>
+  
+  <div data-spy="scroll" data-target="#navbar-example3" data-offset="0">
+    <h4 id="item-1">News</h4>
+    <p>Find here the news of your intrest</p>
+    <h5 id="item-1-1">News 1</h5>
+    <div *ngFor = "let news of news" class="card col-md-8 mx-auto" style="width: 45rem; padding-top: 5vh;">
+      <img class="card-img-top" src={{news.img}} alt="Card image cap">
+      <div class="card-body">
+        <h2 class="card-text text-center">{{news.headline}} </h2>
+      </div>
+    </div>
+      <div class="About-us" style="background-color: rgb(63, 240, 107);">
+       <h4 id="item-2">About us</h4>  
+      </div>
+    
+  
+  </div>
+
+   <!-- About us-->
+   <section class="page-section "  style="background-color: rgb(4, 67, 87);">
+    <div class="container" style="background-color: rgb(63, 240, 107);">
+        <div class="text-center">
+            <div id="who-we-are"> <h1 class="section-heading text-uppercase" style="font-family:'Arvo', serif;letter-spacing:6px;">Apollonox</h1>
+            <h5 class="section-subheading text-muted" style="font-family: 'MuseoModerno', cursive;">We are undergraduate students of IIT Bombay & this is our Institute Technical Summer Project.</h5></div>
+        </div>
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="team-member">
+                    <img class="mx-auto rounded-circle" src="https://lh3.googleusercontent.com/qoHyk9nxdZwCmEZN7UisERmJ6fjDisvrCLQQrWhlQG5Kd1noafHh8Rcj7DaBi8pjRMhcAHILE1qxHQQ8lnGvmRrRcXyTKzFjFDBQVa-ON3JyBO41lsAREe4ZX_GsIxRTOUHz0G45U2pz54DHJO-AO29OKhmGn9mdI8wfiVP_WISY5y50HPZrR4FH0vSqAzQMFywwyyyZfgi46KF3L3CIZEyATuvAOex39UK_H_LC3znfPdER4J5gFjCcFRYBMscAsjR_FeNyRXL9WbG_wMuO-EzaZgCha0JebxlVpzRTAlKZExZ-bN8ep_61pYgd-1sd2h4-LIIcy7FDFk9MD_IPG_qIQZSvXRnjTenOHWU89wt6DYBW7w71GyjJgQNjEmv36-YAIXqb5UfOQrQ7nEz99DEf1T9AuQ60ZlY4KGI9VvvxSDSm_qQxanCYv45uVkzGFB31i3817bFBXX39lEdmtsZogOZN1gOM4DEaPSUXlHkbu_9HQyFjIB6DNqB2gU0v4r4QpQjmsEHy3pJYH_-QqCpeQLlhiSnZriffDyh0AIF2LkZXy-5m5rs4fvmQpsP_OMyPLJjE9s5vSHbUeIyKVrmthc8bwkPmIhouzIBPXP0brD5PAzNyeKE6ZBQ_GdCiev-xtxEZgk-RLaZeyLerHGY7uYr_LOZ4OipkmWfxIyQPS3IShOqZo3183EBxnRmuZrjdVxrb1LgBqNgnar1_3iEQ=w678-h903-no?authuser=0" alt="Shivansh" />
+                    <h4>Shivansh Singh</h4>
+                    <a class="btnX" href="mailto:shivanshsingh1910@gmail.com"><i class="fab fa-google"></i></a><a class="btnX" href="https://github.com/Vishal152k"><i class="fab fa-github"></i></a><a class="btnX" href="https://www.linkedin.com/in/vishal-srivastava-b721b5191"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="team-member">
+                  <img class="mx-auto rounded-circle" src="https://lh3.googleusercontent.com/cF09cXcMqYVk77xLyYO4LMTfaCTXGa6XWrkha6j7t_3nNBKchHYq9Ca3qm-nqY3ae4wwkBtzoPCQCPE-XQApT6K_Uese9ns-FbtVJv2VIkfzf4ypYeW3CnhV3JJsL5_-7iZ9lYF6wOMm7ZjeoUQJHhaZXEK0lJ55YOIqDSD7k9AiS64CWbo0P5C6Z2YaJBJ9QmECyo0PNcb5KkxLTWrOCGyCR_gByBAPkxBmiaZyVXE8fWC2PuK8fuE6eNyGowqKLS_Pjn_r2hupjiaEdg3M-97A3ksFrNzZ-t8OdhIdfRNM26lQZCxWzFt6YDgxFbKolAXXnr74ygIb-By24XU1l88WBpWdd6AoAmn4Cl1q1wtMvdbZie-GLLfPCYGKq89EzpG7twhgCuexbYUlRRM7p3-Q_TTODt2-Qr2TeGHNUDOQHhACI-_O6QxpOUujAo48OSIOw1NpUmd6BEQO0fPHP3fw2-JcsIOhirnRWm8y9pntg6-YGE3Tv9_WeNqGL3zCf49P1IQTCNvWWuvRvnnaasOMzNU1QmuAyJnhgsczW4kKPCXaAf-bMBLjgOv0FIKX6oayk5FIOsbRUYJYzGDNgsvJNa6HH0XKHb4FJ3w-6V06pdX8T9qvgza6iQkWSNtKpM1sMSXYflWFe4j0u4GwB4cFXzMEo12yAHzcgNr_i3rmwuSsQWdkzIwS64lkKmcox24_SJZ2rG5p2rK4jrasqIFn=w677-h903-no?authuser=0" alt="Rahul" />
+                  <h4>Rahul Kumawat</h4>
+                  <a class="btnX" href="mailto:rahulhna02@gmail.com"><i class="fab fa-google"></i></a><a class="btnX" href="https://github.com/rhna222"><i class="fab fa-github"></i></a><a class="btnX" href="http://www.linkedin.com/in/rahul-kumawat-64649b192"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+          </div>
+            <div class="col-lg-3">
+                <div class="team-member">
+                    <img class="mx-auto rounded-circle" src="https://lh3.googleusercontent.com/JcaeBfnTCTBrfOcdEPIE-XOgRRlQOxsWtEojqNRg9Aa5NWd_xwM1-zHUWYOOth9Q_pV4FaxUVYQATU3OixFxdLmc4wrHmmdFdm1kN-I1jePcRUhofT_ai5Y1QGAxFyO_q480yAMtCzMzvlyad_FXqFd7MnPM5ZbGDfs7Wcjab26_gJYiIm9kmaOsr3F8DtXY1ZSGenp2jzrjj5TsbC44MVfRmh3HDlYxN9qoAxkQor9hpt0289rbqLAMzCK8H8NRvG5GDvMCLHCQ9Sha7Pqr582xN5GmIqse18XxD4XqLYLkLa1wjeqhKagpRwAp7asL5wh6ATsh2cVPB7s3TKmFG_LT48v39y1atuoFdYxdRDQzICsBkyxKr-jigyutjtBgd1AU6YyuWbB7iRsM34DgGOL2PXtCk15-U3MyFYXvM5lpnOQUIsl96TgNvJnsiEEZwmsoX9sTFUvRvFrramCoY76J6TKJViyViZ3Iw_OFvWFsx-VmdZuRovjUsI0psLKG-_iOLhi8wywofMit5d8iTOf1bxgHYlC84rgJWmfWu3711TVPUwYzHq7DnO8E5iOcELbIGRVDIn7miVWroiFQ9aU42mjiUlCioT3m-t0dYqE3PoyVz0F_YKMe-9GFZflrU-M03gZJUMP88TnNmnIPl-ZRO2u9g7QFjgs5tFGAJN6LdV7jzgh7IcdQ6cB-HvvAIX3OXDQmhyJMy3GbeMGvLL8F=w678-h903-no?authuser=0" alt="Suyash" />
+                    <h4>Suyash Kadam</h4>
+                    <a class="btnX" href="mailto:suyashk839@gmail.com"><i class="fab fa-google"></i></a><a class="btnX" href="https://github.com/ShreyamMishra"><i class="fab fa-github"></i></a><a class="btnX" href="https://lichess.org/@/UsedUsername"><i class="fas fa-chess"></i></a>
+                </div>
+            </div>
+            
+            <div class="col-lg-3">
+                <div class="team-member">
+                    <img class="mx-auto rounded-circle" src="https://lh3.googleusercontent.com/z48lBL_o04bzWl5smVFktJD_MGvep00wmfZWqld_z6zmPyuZC3ccp2QZDYk9Fi5_THL9zw61Bbsa78w3qDk7w--jvnfnCv9domg0iRQXkJ3Znqh_Ek5oah8Zvfvqmw-QFujpiPtslBkTx-fNIoANwKipFNXv_o1qnRB81XhnPMLLdleBW7Y66_X-K4DpJtLgRaZydfnX8pkigGJU1Gd4Dj0Cf1iEtLbGfvY7nICdGOA58Z7ecFV5ZJnoPm03jGeD8uxZqD5K7-rMn2_ybKCj3aPsGiphH-ZnoOEmPuBZBDoVkZVRSppPNrZ6RcYb_cB_Ryb075wZX0xyxnSQu0rtL7IzHoVg4vm38We2_K-FxZMUe2pAlpKH2bQbNpRyGY3aQRKHnl4-7xabgeM7rHWl25g8UI53aFqNOi_mzkb8GKNV41TncilthfZIvXnAQc3scfzbGlg7d2yyUyVILC8bBiq3Vo1JCh8Mhll5x_vXcJMPQJDA0PZgj77If3m4KlLeElbA5pFvOJO2f_mhKabqXYldgcpMAqdB4SEc_EYXKNqXn-e4KF8TPu_qSvqc-I5iqeY2ygq_DxdcqqMTabyU1_RRWLeuaQfPRXBUKmjfpo_NFMBLtjKW6pJt9g_-fmOX0sdQ9_u5RFNb_0U9vKxYxEF_7ViXh0YWU8IypxcSmOOloppU5aa6npbjLihiZnbooxp-I4NL_bBZ9lmZpPBTHTpBMA=w720-h682-no?authuser=0" alt="Aryan" />
+                    <h4>Aryan Pal</h4>
+                    <a class="btnX" href="mailto:aryanpal3012001@gmail.com"><i class="fab fa-google"></i></a><a class="btnX" href="https://github.com/Vishesh2k01"><i class="fab fa-github"></i></a><a class="btnX" href="https://www.linkedin.com/in/vishesh-agarwal-775b44192/"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>         
+</div>
+    </div>
