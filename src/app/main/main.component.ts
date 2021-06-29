@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -16,9 +18,19 @@ export class MainComponent implements OnInit {
     img:'https://images.indianexpress.com/2021/05/Modi-10.jpg',
   },
 ]
-  constructor() { }
 
-  ngOnInit(): void {
+  details: any;
+  constructor(private router: Router, private http: HttpClient) { }
+
+  ngOnInit() {
+    var url = "http://127.0.0.1:8000/me/";
+
+    this.http.get<any>(url).subscribe(
+      data => {
+        console.log(data)
+        this.details = data
+      }
+      )
   }
 
 }

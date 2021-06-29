@@ -41,10 +41,13 @@
     <h4 id="item-1">News</h4>
     <p>Find here the news of your intrest</p>
     <h5 id="item-1-1">News 1</h5>
-    <div *ngFor = "let news of news" class="card col-md-8 mx-auto" style="width: 45rem; padding-top: 5vh;">
-      <img class="card-img-top" src={{news.img}} alt="Card image cap">
+    <div *ngFor = "let news of details" class="card col-md-8 mx-auto" style="width: 45rem; padding-top: 5vh;">
+      <!-- <img class="card-img-top" src={{news.img}} alt="Card image cap"> -->
       <div class="card-body">
-        <h2 class="card-text text-center">{{news.headline}} </h2>
+        <a target="_blank" href={{news.url}}>click here for more details</a>
+        <p>Source: {{news.name}}</p>
+        <p>Country: {{news.country}}</p>
+        <p class="card-text text-center">{{news.description}} </p>
       </div>
     </div>
       <div class="About-us" style="background-color: rgb(63, 240, 107);">

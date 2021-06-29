@@ -9,7 +9,7 @@ import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { RegisterComponent } from './register/register.component';
-
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -25,6 +25,7 @@ import { RegisterComponent } from './register/register.component';
     FormsModule,
     CommonModule,
     BrowserAnimationsModule,
+    HttpClientModule,
 
   ],
   providers: [],
